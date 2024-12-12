@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>68 Property Mangement</title>
+         <link rel="stylesheet"  type="text/css" href="/style/style.css">
+         <link rel="stylesheet"  type="text/css" href="/style/headerbar.css">
+         <link rel="stylesheet"  type="text/css" href="/style/qr_style.css">
+        <link  rel="stylesheet"  type="text/css" href="/style/aboutus.css">
+        <script src="/script/page_route.js"></script>
+    </head>
+<body>
+    <!-- Header Bar -->
+    <headerbar class="header-bar">
+    <div class="logo">
+    </div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <nav class="nav-links">
+      <ul>
+        <li><button class="nav-btn" onclick="loadPage('/views/landing')">Home</button></li>
+        <li><button class="nav-btn" onclick="loadPage('/views/services')">Services</button></li>
+        <li><button class="nav-btn" onclick="loadPage('/views/credit')">Credit Reporting</button></li>
+        <li><button class="nav-btn" onclick="loadPage('/views/FAQ')">FAQ</button></li>
+        <li><button class="nav-btn" onclick="loadPage('/views/Pricing')">Pricing and Fees</button></li>
+        <li><button class="nav-btn" onclick="loadPage('/views/contact')">Contact</button></li>
+        </ul>
+    </nav>
+  </headerbar>
+  <!-- Main Page -->
+  <!-- Hero Section -->
+  <div id="main-page">
+    <header class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to 68 Property Mangement</h1>
+      <p>Responsible, Reliable, Affordable Residential Management solutions.</p>
+      <a onclick="loadPage('/views/contact')" class="cta-btn">Contact Us</a>
+    </div>
+  </header>
+    </div>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 68 Property Mangement. All rights reserved.</p>
+    <p>Follow us on <a href="https://www.linkedin.com/in/kyle-meiborg-917674233/">Linkedin</a> | <a href="https://www.facebook.com/68-Property-Management-108424995123278">Facebook</a></p>
+  </footer>
+</body>
+</html>
+<script>
+function toggleSidebar() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+</script>
+<script src="https://unpkg.com/@ericblade/quagga2@1.8.4/dist/quagga.min.js"></script>
+<script src="/script/script.js"></script>
+<script src="/script/image_route.js"></script>
+<script src="/script/store.js"></script>
+<script src="/script/scanner.js"></script>
